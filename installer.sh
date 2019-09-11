@@ -50,7 +50,7 @@ install_scripts() {
 		printf "${red}[!] Metasploit is not installed${reset}"
 	fi
 }
-
+cp -rf apkbleed.sh $PREFIX/bin/apkbleed
 termux-wake-lock
 setup_alpine
 install_scripts
