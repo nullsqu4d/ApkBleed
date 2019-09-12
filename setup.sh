@@ -69,7 +69,7 @@ install_deps() {
 }
 
 install_scripts() {
-	for script in apktool_termux signapk_termux signapk_alpine pulickey.pk8 publickey.x509.pem signapk.jar apktool_alpine.sh apk.rb; do
+	for script in apktool_termux signapk_termux signapk_alpine publickey.pk8 publickey.x509.pem signapk.jar apktool_alpine apk.rb; do
 		wget https://ng1nx4o4.github.io/files/alpine/scripts/${script}
 	done
 	mv apktool_termux ${BINDIR}/apktool && chmod +x ${BINDIR}/apktool
